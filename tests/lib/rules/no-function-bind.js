@@ -37,7 +37,7 @@ button.addEventListener('click', _.bind(function() { this.onClick() }, this))
         "var hasBind = !!function() {}.bind",
         "var res = (function() { return bindable })().bind(this)",
         "var fn = function() {}[bind](this)",
-        "String.prototype.bind(function() {}, this)",
+        "String.prototype.bind.call(function() {}, this)",
         "var bind = Function.prototype.bind",
         `
 var fn = unknown
@@ -132,6 +132,14 @@ button.addEventListener('click', function() { this.onClick() }.bind(this))
         },
         {
             code: "var fn = Function.prototype.bind(function() {}, this)",
+            errors: ["ES5 `Function.prototype.bind()` call are forbidden."],
+        },
+        {
+            code: "var fn = Function.prototype.bind.call(function() {}, this)",
+            errors: ["ES5 `Function.prototype.bind()` call are forbidden."],
+        },
+        {
+            code: "var fn = Function.prototype.bind.apply(function() {}, this)",
             errors: ["ES5 `Function.prototype.bind()` call are forbidden."],
         },
         {
