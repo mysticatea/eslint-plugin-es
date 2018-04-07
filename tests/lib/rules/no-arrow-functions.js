@@ -110,5 +110,21 @@ var fnHasThis2 = function() {
                 "ES2015 arrow function expressions are forbidden.",
             ],
         },
+
+        {
+            code: `
+class SubClass extends SuperClass {
+
+    methodSub() {
+        const f = () => {
+            return super.methodSuper()
+        }
+        return f
+    }
+}
+            `,
+            output: null,
+            errors: ["ES2015 arrow function expressions are forbidden."],
+        },
     ],
 })
