@@ -110,7 +110,6 @@ var fnHasThis2 = function() {
                 "ES2015 arrow function expressions are forbidden.",
             ],
         },
-
         {
             code: `
 class SubClass extends SuperClass {
@@ -125,6 +124,43 @@ class SubClass extends SuperClass {
             `,
             output: null,
             errors: ["ES2015 arrow function expressions are forbidden."],
+        },
+        {
+            code: `
+const f = () => {
+    return function () {
+        return this
+    }
+}
+            `,
+            output: `
+const f = function() {
+    return function () {
+        return this
+    }
+}
+            `,
+            errors: ["ES2015 arrow function expressions are forbidden."],
+        },
+        {
+            code: `
+const f = () => {
+    return () => {
+        return this
+    }
+}
+            `,
+            output: `
+const f = function() {
+    return () => {
+        return this
+    }
+}.bind(this)
+            `,
+            errors: [
+                "ES2015 arrow function expressions are forbidden.",
+                "ES2015 arrow function expressions are forbidden.",
+            ],
         },
     ],
 })
