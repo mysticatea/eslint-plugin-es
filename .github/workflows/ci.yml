@@ -30,18 +30,19 @@ jobs:
         node: [6.x, 8.x, 10.x, 12.x]
         eslint: [4.x, 5.x, 6.x]
         exclude:
+          # ESLint 6.x requires Node 8 or upper.
           - node: 6.x
-            eslint: 4.x
-          - node: 6.x
-            eslint: 5.x
-          - node: 8.x
-            eslint: 4.x
+            eslint: 6.x
+          # Run ESLint 5.x only on Node 6 and the latest Node.
           - node: 8.x
             eslint: 5.x
           - node: 10.x
+            eslint: 5.x
+          # Run ESLint 4.x only on Node 6 and the latest Node.
+          - node: 8.x
             eslint: 4.x
           - node: 10.x
-            eslint: 5.x
+            eslint: 4.x
 
     steps:
     - uses: actions/checkout@v1
@@ -54,3 +55,5 @@ jobs:
       run: npm run -s test:mocha
     - name: Send Coverage
       run: npm run -s codecov
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
