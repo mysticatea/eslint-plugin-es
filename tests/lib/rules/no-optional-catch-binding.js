@@ -8,6 +8,7 @@ const RuleTester = require("../../tester")
 const rule = require("../../../lib/rules/no-optional-catch-binding.js")
 
 if (!RuleTester.isSupported(2019)) {
+    console.log("Skip the tests of no-json-superset.")
     return
 }
 
