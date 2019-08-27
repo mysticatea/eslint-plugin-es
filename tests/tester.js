@@ -19,6 +19,6 @@ RuleTester.setDefaultConfig({
     },
     globals: es2017,
 })
-RuleTester.isSupported = targetEcmaVersion => targetEcmaVersion >= ecmaVersion
+RuleTester.isSupported = targetEcmaVersion => targetEcmaVersion <= ecmaVersion
 
 module.exports = RuleTester
