@@ -7,6 +7,10 @@
 const RuleTester = require("../../tester")
 const rule = require("../../../lib/rules/no-json-superset.js")
 
+if (!RuleTester.isSupported(2019)) {
+    return
+}
+
 new RuleTester().run("no-json-superset", rule, {
     valid: [
         "let a = null",

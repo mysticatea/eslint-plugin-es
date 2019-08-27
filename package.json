@@ -29,6 +29,7 @@
     "nyc": "^14.1.1",
     "opener": "^1.5.1",
     "rimraf": "^3.0.0",
+    "semver": "^6.3.0",
     "vue-eslint-editor": "^0.1.4",
     "vuepress": "^0.14.4"
   },

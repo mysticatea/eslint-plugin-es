@@ -7,6 +7,10 @@
 const RuleTester = require("../../tester")
 const rule = require("../../../lib/rules/no-optional-catch-binding.js")
 
+if (!RuleTester.isSupported(2019)) {
+    return
+}
+
 new RuleTester().run("no-optional-catch-binding", rule, {
     valid: ["try {} catch (err) {}"],
     invalid: [
