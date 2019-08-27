@@ -10,7 +10,9 @@ const semver = require("semver")
 
 const eslintVersion = new Linter().version
 const ecmaVersion = semver.lt(eslintVersion, "5.0.0") ? 2018 : 2019
-console.log("ECMAVersion: %d", ecmaVersion)
+
+//eslint-disable-next-line no-console
+console.log("ECMAScript Version: %d", ecmaVersion)
 
 RuleTester.setDefaultConfig({
     parserOptions: {
