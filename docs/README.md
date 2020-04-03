@@ -57,6 +57,7 @@ This plugin provides the following configs.
 
 | Config ID | Description |
 |:----------|:------------|
+| `plugin:es/no-2020` | enable all rules which disallow ES2020 syntax.
 | `plugin:es/no-2019` | enable all rules which disallow ES2019 syntax.
 | `plugin:es/no-2018` | enable all rules which disallow ES2018 syntax.
 | `plugin:es/no-2017` | enable all rules which disallow ES2017 syntax.
