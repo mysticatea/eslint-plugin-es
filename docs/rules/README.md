@@ -6,7 +6,8 @@ This plugin provides the following rules.
 
 ## ES2020
 
-There is no config which enables all rules in this category.
+The `extends: "plugin:es/no-2020"` config enables the following rules.
+
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
 | [es/no-bigint](./no-bigint.md) | disallow `bigint` syntax and built-ins. |  |
