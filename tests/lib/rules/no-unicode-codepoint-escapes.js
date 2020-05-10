@@ -51,35 +51,35 @@ new RuleTester().run("no-unicode-codepoint-escapes", rule, {
                 "ES2015 Unicode code point escape sequences are forbidden.",
             ],
         },
-        // {
-        //     code: "`\\u{45}`",
-        //     output: "`\\u0045`",
-        //     errors: [
-        //         "ES2015 Unicode code point escape sequences are forbidden.",
-        //     ],
-        // },
         {
-            code: "tag`\\u{45}`",
-            output: "tag`\\0045}`",
+            code: "`\\u{45}`",
+            output: "`\\u0045`",
             errors: [
                 "ES2015 Unicode code point escape sequences are forbidden.",
             ],
         },
-        // {
-        //     //eslint-disable-next-line no-template-curly-in-string
-        //     code: "`\\u{45}${a}\\u{46}`",
-        //     //eslint-disable-next-line no-template-curly-in-string
-        //     output: "`\\u0045${a}\\u0046`",
-        //     errors: [
-        //         "ES2015 Unicode code point escape sequences are forbidden.",
-        //         "ES2015 Unicode code point escape sequences are forbidden.",
-        //     ],
-        // },
+        {
+            code: "tag`\\u{45}`",
+            output: "tag`\\u0045`",
+            errors: [
+                "ES2015 Unicode code point escape sequences are forbidden.",
+            ],
+        },
+        {
+            //eslint-disable-next-line no-template-curly-in-string
+            code: "`\\u{45}${a}\\u{46}`",
+            //eslint-disable-next-line no-template-curly-in-string
+            output: "`\\u0045${a}\\u0046`",
+            errors: [
+                "ES2015 Unicode code point escape sequences are forbidden.",
+                "ES2015 Unicode code point escape sequences are forbidden.",
+            ],
+        },
         {
             //eslint-disable-next-line no-template-curly-in-string
             code: "tag`\\u{45}${a}\\u{46}`",
             //eslint-disable-next-line no-template-curly-in-string
-            output: "tag`\\0045}${a}\\0046}`",
+            output: "tag`\\u0045${a}\\u0046`",
             errors: [
                 "ES2015 Unicode code point escape sequences are forbidden.",
                 "ES2015 Unicode code point escape sequences are forbidden.",
@@ -89,7 +89,7 @@ new RuleTester().run("no-unicode-codepoint-escapes", rule, {
             //eslint-disable-next-line no-template-curly-in-string
             code: "tag`\\u{XXXZX}${a}\\u{46}`",
             //eslint-disable-next-line no-template-curly-in-string
-            output: "tag`\\u{XXXZX}${a}\\0046}`",
+            output: "tag`\\u{XXXZX}${a}\\u0046`",
             errors: [
                 "ES2015 Unicode code point escape sequences are forbidden.",
             ],
@@ -108,12 +108,12 @@ new RuleTester().run("no-unicode-codepoint-escapes", rule, {
         },
         {
             code: "`\\u{20BB7}`",
-            output: "`\\D842\\uDFB7}`",
+            output: "`\\uD842\\uDFB7`",
             errors: [
                 {
                     message:
                         "ES2015 Unicode code point escape sequences are forbidden.",
-                    column: 1,
+                    column: 2,
                     line: 1,
                 },
             ],
@@ -124,7 +124,7 @@ a=\`\${a}\\u{D842}\\u{DFB7}\`
 b="\\u{20BB7}"
 `,
             output: `
-a=\`\${a}\\D842}\\DFB7}\`
+a=\`\${a}\\uD842\\uDFB7\`
 b="\\uD842\\uDFB7"
 `,
             errors: [
@@ -132,23 +132,26 @@ b="\\uD842\\uDFB7"
                     message:
                         "ES2015 Unicode code point escape sequences are forbidden.",
                     line: 2,
-                    column: 7,
+                    column: 8,
+                    nodeType: "TemplateElement",
                     endLine: 2,
-                    endColumn: 15,
+                    endColumn: 16,
                 },
                 {
                     message:
                         "ES2015 Unicode code point escape sequences are forbidden.",
                     line: 2,
-                    column: 15,
+                    column: 16,
+                    nodeType: "TemplateElement",
                     endLine: 2,
-                    endColumn: 23,
+                    endColumn: 24,
                 },
                 {
                     message:
                         "ES2015 Unicode code point escape sequences are forbidden.",
                     line: 3,
                     column: 4,
+                    nodeType: "Literal",
                     endLine: 3,
                     endColumn: 13,
                 },
