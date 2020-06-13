@@ -1,5 +1,5 @@
 /**
- * @author Toru Nagashima <https://github.com/mysticatea>
+ * @author Yosuke Ota <https://github.com/ota-meshi>
  * See LICENSE file in root directory for full license.
  */
 "use strict"
