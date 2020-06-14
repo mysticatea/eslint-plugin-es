@@ -13,9 +13,7 @@ if (!RuleTester.isSupported(2020)) {
     return
 }
 
-new RuleTester({
-    parser: require.resolve("espree"),
-}).run("no-optional-chaining", rule, {
+new RuleTester().run("no-optional-chaining", rule, {
     valid: ["var x = a.b", "var x = a[b]", "foo()"],
     invalid: [
         {
@@ -65,6 +63,26 @@ new RuleTester({
                     message: "ES2020 optional chaining is forbidden.",
                     column: 20,
                     endColumn: 22,
+                },
+            ],
+        },
+        {
+            code: "var x = a/*?.*/?.b",
+            errors: [
+                {
+                    message: "ES2020 optional chaining is forbidden.",
+                    column: 16,
+                    endColumn: 18,
+                },
+            ],
+        },
+        {
+            code: "var x = '?.'?.['?.']",
+            errors: [
+                {
+                    message: "ES2020 optional chaining is forbidden.",
+                    column: 13,
+                    endColumn: 15,
                 },
             ],
         },
