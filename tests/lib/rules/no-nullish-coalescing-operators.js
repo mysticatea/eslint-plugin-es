@@ -43,5 +43,39 @@ new RuleTester().run("no-nullish-coalescing-operators", rule, {
                 },
             ],
         },
+        {
+            code: "a ?? b ?? c",
+            errors: [
+                {
+                    message:
+                        "ES2020 nullish coalescing operators are forbidden.",
+                    column: 3,
+                    endColumn: 5,
+                },
+                {
+                    message:
+                        "ES2020 nullish coalescing operators are forbidden.",
+                    column: 8,
+                    endColumn: 10,
+                },
+            ],
+        },
+        {
+            code: "(a ?? b) ?? c",
+            errors: [
+                {
+                    message:
+                        "ES2020 nullish coalescing operators are forbidden.",
+                    column: 4,
+                    endColumn: 6,
+                },
+                {
+                    message:
+                        "ES2020 nullish coalescing operators are forbidden.",
+                    column: 10,
+                    endColumn: 12,
+                },
+            ],
+        },
     ],
 })
