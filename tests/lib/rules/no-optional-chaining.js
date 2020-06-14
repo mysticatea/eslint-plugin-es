@@ -32,7 +32,7 @@ new RuleTester().run("no-optional-chaining", rule, {
                 {
                     message: "ES2020 optional chaining is forbidden.",
                     column: 10,
-                    endColumn: 13,
+                    endColumn: 12,
                 },
             ],
         },
@@ -42,7 +42,7 @@ new RuleTester().run("no-optional-chaining", rule, {
                 {
                     message: "ES2020 optional chaining is forbidden.",
                     column: 4,
-                    endColumn: 8,
+                    endColumn: 6,
                 },
             ],
         },
