@@ -15,8 +15,10 @@ foo?.()
 👌 Examples of **correct** code for this rule:
 
 <eslint-playground type="good" code="/*eslint es/no-optional-chaining: error */
+var x = a != null ? a.b : undefined
 var x = a && a.b
-var x = a != null ? a[b] : a
+var x = a != null ? a[b] : undefined
+var x = a && a[b]
 foo && foo()
 " />
 
