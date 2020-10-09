@@ -6,16 +6,20 @@ This plugin provides the following rules.
 
 ## ES2021
 
-There is no config which enables all rules in this category.
+There are multiple configs which enable all rules in this category: `plugin:es/no-new-in-es2021-experimental`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
 | [es/no-aggregate-error](./no-aggregate-error.md) | disallow the `AggregateError` class. |  |
 | [es/no-finalization-registry](./no-finalization-registry.md) | disallow the `FinalizationRegistry` class. |  |
 | [es/no-logical-assignment-operators](./no-logical-assignment-operators.md) | disallow logical assignment operators. | 🔧 |
-| [es/no-numeric-separators](./no-numeric-separators.md) | disallow numeric separators. |  |
+| [es/no-numeric-separators](./no-numeric-separators.md) | disallow numeric separators. | 🔧 |
 | [es/no-promise-any](./no-promise-any.md) | disallow `Promise.any` function. |  |
 | [es/no-weak-ref](./no-weak-ref.md) | disallow the `WeakRef` class. |  |
+
+:::warning
+`"plugin:es/no-new-in-es2021-experimental"` config is an **Experimental Feature**. It may be changed or removed in future releases without notice.
+:::
 
 ## ES2020
 

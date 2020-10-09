@@ -34,7 +34,7 @@ const categories = [12, 11, 10, 9, 8, 7, 6, 5].reduce(
             id,
             revision,
             rules: [],
-            noConfig: revision === latest,
+            experimental: revision === latest,
         }
         return map
     },

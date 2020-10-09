@@ -56,22 +56,31 @@ For example, to enable only Rest/Spread Properties in ES2018, as similar to lega
 
 This plugin provides the following configs.
 
+<!-- CONFIGS_TABLE_START -->
+
 | Config ID | Description |
 |:----------|:------------|
-| `plugin:es/no-new-in-es2020` | disallow the new stuff in ES2020.
-| `plugin:es/no-new-in-es2019` | disallow the new stuff in ES2019.
-| `plugin:es/no-new-in-es2018` | disallow the new stuff in ES2018.
-| `plugin:es/no-new-in-es2017` | disallow the new stuff in ES2017.
-| `plugin:es/no-new-in-es2016` | disallow the new stuff in ES2016.
-| `plugin:es/no-new-in-es2015` | disallow the new stuff in ES2015.
-| `plugin:es/no-new-in-es5` | disallow the new stuff in ES5.
-| `plugin:es/restrict-to-es2019` | disallow new stuff that ES2019 doesn't include.
-| `plugin:es/restrict-to-es2018` | disallow new stuff that ES2018 doesn't include.
-| `plugin:es/restrict-to-es2017` | disallow new stuff that ES2017 doesn't include.
-| `plugin:es/restrict-to-es2016` | disallow new stuff that ES2016 doesn't include.
-| `plugin:es/restrict-to-es2015` | disallow new stuff that ES2015 doesn't include.
-| `plugin:es/restrict-to-es5` | disallow new stuff that ES5 doesn't include.
-| `plugin:es/restrict-to-es3` | disallow new stuff that ES3 doesn't include.
+| `plugin:es/no-new-in-es2021-experimental` | disallow the new stuff in ES2021. **(Experimental Feature)** |
+| `plugin:es/no-new-in-es2020` | disallow the new stuff in ES2020. |
+| `plugin:es/no-new-in-es2019` | disallow the new stuff in ES2019. |
+| `plugin:es/no-new-in-es2018` | disallow the new stuff in ES2018. |
+| `plugin:es/no-new-in-es2017` | disallow the new stuff in ES2017. |
+| `plugin:es/no-new-in-es2016` | disallow the new stuff in ES2016. |
+| `plugin:es/no-new-in-es2015` | disallow the new stuff in ES2015. |
+| `plugin:es/no-new-in-es5` | disallow the new stuff in ES5. |
+| `plugin:es/restrict-to-es2019` | disallow new stuff that ES2019 doesn't include. |
+| `plugin:es/restrict-to-es2018` | disallow new stuff that ES2018 doesn't include. |
+| `plugin:es/restrict-to-es2017` | disallow new stuff that ES2017 doesn't include. |
+| `plugin:es/restrict-to-es2016` | disallow new stuff that ES2016 doesn't include. |
+| `plugin:es/restrict-to-es2015` | disallow new stuff that ES2015 doesn't include. |
+| `plugin:es/restrict-to-es5` | disallow new stuff that ES5 doesn't include. |
+| `plugin:es/restrict-to-es3` | disallow new stuff that ES3 doesn't include. |
+
+:::warning
+The config of **Experimental Feature**s may be changed or removed in future releases without notice.
+:::
+
+<!-- CONFIGS_TABLE_END -->
 
 For example:
 
