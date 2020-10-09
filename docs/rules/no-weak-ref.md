@@ -1,6 +1,6 @@
 # disallow the `WeakRef` class (es/no-weak-ref)
 
-This rule reports ES2021 `WeakRef` class as errors.
+This rule reports ES2021 [`WeakRef` class](https://github.com/tc39/proposal-weakrefs) as errors.
 
 ## Examples
 
