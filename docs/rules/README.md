@@ -4,6 +4,13 @@ This plugin provides the following rules.
 
 - 🔧 mark means that the `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by the rule.
 
+## ES2021
+
+There is no config which enables all rules in this category.
+| Rule ID | Description |    |
+|:--------|:------------|:--:|
+| [es/no-aggregate-error](./no-aggregate-error.md) | disallow the `AggregateError` class. |  |
+
 ## ES2020
 
 There is no config which enables all rules in this category.
@@ -13,7 +20,7 @@ There is no config which enables all rules in this category.
 | [es/no-dynamic-import](./no-dynamic-import.md) | disallow `import()` syntax. |  |
 | [es/no-export-ns-from](./no-export-ns-from.md) | disallow `export * as ns`. |  |
 | [es/no-global-this](./no-global-this.md) | disallow the `globalThis` variable. |  |
-| [es/no-import-meta](./no-import-meta.md) | disallow `new.target` meta property. |  |
+| [es/no-import-meta](./no-import-meta.md) | disallow `import.meta` meta property. |  |
 | [es/no-nullish-coalescing-operators](./no-nullish-coalescing-operators.md) | disallow nullish coalescing operators. |  |
 | [es/no-promise-all-settled](./no-promise-all-settled.md) | disallow `Promise.allSettled` function. |  |
 
