@@ -21,7 +21,7 @@
     "@vuepress/plugin-pwa": "^1.2.0",
     "acorn": "^7.1.0",
     "babel-eslint": "^10.0.1",
-    "codecov": "^3.5.0",
+    "codecov": "3.7.0",
     "eslint": "^6.2.2",
     "eslint4b": "^6.2.2",
     "espree": "^7.0.0",
