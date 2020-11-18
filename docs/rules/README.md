@@ -1,4 +1,4 @@
-# All Rules
+# Available Rules
 
 This plugin provides the following rules.
 
@@ -7,13 +7,16 @@ This plugin provides the following rules.
 ## ES2021
 
 There is no config which enables all rules in this category.
+
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
 | [es/no-logical-assignment-operators](./no-logical-assignment-operators.md) | disallow logical assignment operators. | 🔧 |
+| [es/no-numeric-separators](./no-numeric-separators.md) | disallow numeric separators. |  |
 
 ## ES2020
 
-There is no config which enables all rules in this category.
+There are multiple configs which enable all rules in this category: `plugin:es/no-new-in-es2020`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, `plugin:es/restrict-to-es2017`, `plugin:es/restrict-to-es2018`, and `plugin:es/restrict-to-es2019`
+
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
 | [es/no-bigint](./no-bigint.md) | disallow `bigint` syntax and built-ins. |  |
@@ -22,11 +25,12 @@ There is no config which enables all rules in this category.
 | [es/no-global-this](./no-global-this.md) | disallow the `globalThis` variable. |  |
 | [es/no-import-meta](./no-import-meta.md) | disallow `import.meta` meta property. |  |
 | [es/no-nullish-coalescing-operators](./no-nullish-coalescing-operators.md) | disallow nullish coalescing operators. |  |
+| [es/no-optional-chaining](./no-optional-chaining.md) | disallow optional chaining. |  |
 | [es/no-promise-all-settled](./no-promise-all-settled.md) | disallow `Promise.allSettled` function. |  |
 
 ## ES2019
 
-The `extends: "plugin:es/no-2019"` config enables the following rules.
+There are multiple configs which enable all rules in this category: `plugin:es/no-new-in-es2019`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, `plugin:es/restrict-to-es2017`, and `plugin:es/restrict-to-es2018`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -37,7 +41,7 @@ The `extends: "plugin:es/no-2019"` config enables the following rules.
 
 ## ES2018
 
-The `extends: "plugin:es/no-2018"` config enables the following rules.
+There are multiple configs which enable all rules in this category: `plugin:es/no-new-in-es2018`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, and `plugin:es/restrict-to-es2017`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -51,7 +55,7 @@ The `extends: "plugin:es/no-2018"` config enables the following rules.
 
 ## ES2017
 
-The `extends: "plugin:es/no-2017"` config enables the following rules.
+There are multiple configs which enable all rules in this category: `plugin:es/no-new-in-es2017`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, and `plugin:es/restrict-to-es2016`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -65,7 +69,7 @@ The `extends: "plugin:es/no-2017"` config enables the following rules.
 
 ## ES2016
 
-The `extends: "plugin:es/no-2016"` config enables the following rules.
+There are multiple configs which enable all rules in this category: `plugin:es/no-new-in-es2016`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, and `plugin:es/restrict-to-es2015`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -73,7 +77,7 @@ The `extends: "plugin:es/no-2016"` config enables the following rules.
 
 ## ES2015
 
-The `extends: "plugin:es/no-2015"` config enables the following rules.
+There are multiple configs which enable all rules in this category: `plugin:es/no-new-in-es2015`, `plugin:es/restrict-to-es3`, and `plugin:es/restrict-to-es5`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -145,7 +149,7 @@ The `extends: "plugin:es/no-2015"` config enables the following rules.
 
 ## ES5
 
-The `extends: "plugin:es/no-5"` config enables the following rules.
+There are multiple configs which enable all rules in this category: `plugin:es/no-new-in-es5` and `plugin:es/restrict-to-es3`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
