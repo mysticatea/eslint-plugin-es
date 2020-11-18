@@ -65,11 +65,13 @@ export default {
                     BigUint64Array: false,
                     globalThis: true,
                     // ES2021 globals
+                    AggregateError: false,
                     FinalizationRegistry: false,
+                    WeakRef: false,
                 },
                 rules: {},
                 parserOptions: {
-                    ecmaVersion: 2020,
+                    ecmaVersion: 2021,
                     sourceType: "module",
                 },
             },
