@@ -140,6 +140,7 @@ There are multiple configs that enable all rules in this category: `plugin:es/no
 | [es/no-set](./no-set.md) | disallow the `Set` class. |  |
 | [es/no-spread-elements](./no-spread-elements.md) | disallow spread elements. |  |
 | [es/no-string-fromcodepoint](./no-string-fromcodepoint.md) | disallow the `String.fromCodePoint` method. |  |
+| [es/no-string-prototype-codepointat](./no-string-prototype-codepointat.md) | disallow the `String.prototype.codePointAt` method. |  |
 | [es/no-string-raw](./no-string-raw.md) | disallow the `String.raw` method. |  |
 | [es/no-subclassing-builtins](./no-subclassing-builtins.md) | disallow the subclassing of the built-in classes. |  |
 | [es/no-symbol](./no-symbol.md) | disallow the `Symbol` class. |  |
