@@ -13,7 +13,7 @@ This rule is silent by default because it's hard to know types. You need to conf
 
 <eslint-playground type="bad" code="/*eslint es/no-array-prototype-flat: [error, { aggressive: true }] */
 foo.flat(0)
-foo.flatMap(e => [e, 2 * e])
+foo.flatMap(e =&gt; [e, 2 * e])
 " />
 
 ## 🔧 Options

@@ -14,9 +14,10 @@ This proposal includes the following two:
 ⛔ Examples of **incorrect** code for this rule:
 
 <eslint-playground type="bad" code="/*eslint es/no-promise-any: error */
-
-const p = Promise.any(promises).catch(error => {
-  if (error instanceof AggregateError) {}
+const p = Promise.any(promises).catch(error =&gt; {
+    if (error instanceof AggregateError) {
+        // Do something.
+    }
 })
 " />
 

@@ -12,7 +12,7 @@ This rule is silent by default because it's hard to know types. You need to conf
 ⛔ Examples of **incorrect** code for this rule:
 
 <eslint-playground type="bad" code="/*eslint es/no-array-prototype-reduce: [error, { aggressive: true }] */
-foo.reduce((a, b) => a + b, 0)
+foo.reduce((a, b) =&gt; a + b, 0)
 " />
 
 ## 🔧 Options
