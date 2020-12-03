@@ -16,9 +16,7 @@ This proposal includes the following two:
 <eslint-playground type="bad" code="/*eslint es/no-promise-any: error */
 
 const p = Promise.any(promises).catch(error => {
-    if (error instanceof AggregateError) {
-        // Do something.
-    }
+  if (error instanceof AggregateError) {}
 })
 " />
 

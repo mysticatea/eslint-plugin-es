@@ -12,7 +12,7 @@ This rule is silent by default because it's hard to know types. You need to conf
 ⛔ Examples of **incorrect** code for this rule:
 
 <eslint-playground type="bad" code="/*eslint es/no-string-prototype-startswith: [error, { aggressive: true }] */
-foo.startsWith("a")
+foo.startsWith(&quot;a&quot;)
 " />
 
 ## 🔧 Options
