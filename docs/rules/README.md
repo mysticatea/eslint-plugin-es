@@ -4,9 +4,15 @@ This plugin provides the following rules.
 
 - 🔧 mark means that the `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by the rule.
 
-## ES2021
+## ES2022
 
 There is a config that enables the rules in this category: `plugin:es/no-new-in-esnext`
+
+⚠️ No rules yet. It will be added in the future.
+
+## ES2021
+
+There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2021`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, `plugin:es/restrict-to-es2017`, `plugin:es/restrict-to-es2018`, `plugin:es/restrict-to-es2019`, and `plugin:es/restrict-to-es2020`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -18,7 +24,7 @@ There is a config that enables the rules in this category: `plugin:es/no-new-in-
 
 ## ES2020
 
-There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2020`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, `plugin:es/restrict-to-es2017`, `plugin:es/restrict-to-es2018`, and `plugin:es/restrict-to-es2019`
+There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2020`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, `plugin:es/restrict-to-es2017`, `plugin:es/restrict-to-es2018`, `plugin:es/restrict-to-es2019`, and `plugin:es/restrict-to-es2020`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -34,7 +40,7 @@ There are multiple configs that enable all rules in this category: `plugin:es/no
 
 ## ES2019
 
-There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2019`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, `plugin:es/restrict-to-es2017`, and `plugin:es/restrict-to-es2018`
+There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2019`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, `plugin:es/restrict-to-es2017`, `plugin:es/restrict-to-es2018`, and `plugin:es/restrict-to-es2019`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -48,7 +54,7 @@ There are multiple configs that enable all rules in this category: `plugin:es/no
 
 ## ES2018
 
-There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2018`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, and `plugin:es/restrict-to-es2017`
+There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2018`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, `plugin:es/restrict-to-es2017`, and `plugin:es/restrict-to-es2018`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -63,7 +69,7 @@ There are multiple configs that enable all rules in this category: `plugin:es/no
 
 ## ES2017
 
-There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2017`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, and `plugin:es/restrict-to-es2016`
+There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2017`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, `plugin:es/restrict-to-es2016`, and `plugin:es/restrict-to-es2017`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -78,7 +84,7 @@ There are multiple configs that enable all rules in this category: `plugin:es/no
 
 ## ES2016
 
-There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2016`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, and `plugin:es/restrict-to-es2015`
+There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2016`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, `plugin:es/restrict-to-es2015`, and `plugin:es/restrict-to-es2016`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -87,7 +93,7 @@ There are multiple configs that enable all rules in this category: `plugin:es/no
 
 ## ES2015
 
-There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2015`, `plugin:es/restrict-to-es3`, and `plugin:es/restrict-to-es5`
+There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es2015`, `plugin:es/restrict-to-es3`, `plugin:es/restrict-to-es5`, and `plugin:es/restrict-to-es2015`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
@@ -173,7 +179,7 @@ There are multiple configs that enable all rules in this category: `plugin:es/no
 
 ## ES5
 
-There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es5` and `plugin:es/restrict-to-es3`
+There are multiple configs that enable all rules in this category: `plugin:es/no-new-in-es5`, `plugin:es/restrict-to-es3`, and `plugin:es/restrict-to-es5`
 
 | Rule ID | Description |    |
 |:--------|:------------|:--:|
