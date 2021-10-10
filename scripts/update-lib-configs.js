@@ -6,7 +6,7 @@
 
 const fs = require("fs")
 const path = require("path")
-const { CLIEngine } = require("eslint")
+const { ESLint } = require("eslint")
 const { categories } = require("./rules")
 const Root = path.resolve(__dirname, "../lib/configs")
 
@@ -59,6 +59,4 @@ for (const { experimental, revision, rules } of Object.values(categories)) {
     }
 }
 
-CLIEngine.outputFixes(
-    new CLIEngine({ fix: true }).executeOnFiles(["lib/configs"]),
-)
+ESLint.outputFixes(new ESLint({ fix: true }).lintFiles(["lib/configs"]))
