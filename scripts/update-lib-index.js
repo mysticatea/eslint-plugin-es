@@ -6,7 +6,7 @@
 
 const fs = require("fs")
 const path = require("path")
-const { CLIEngine } = require("eslint")
+const { ESLint } = require("eslint")
 const { rules } = require("./rules")
 const collator = new Intl.Collator("en", { numeric: true })
 
@@ -54,6 +54,4 @@ module.exports = {
 `,
 )
 
-CLIEngine.outputFixes(
-    new CLIEngine({ fix: true }).executeOnFiles(["lib/index.js"]),
-)
+ESLint.outputFixes(new ESLint({ fix: true }).lintFiles(["lib/index.js"]))

@@ -6,7 +6,7 @@
 
 const fs = require("fs")
 const path = require("path")
-const { CLIEngine } = require("eslint")
+const { ESLint } = require("eslint")
 const { rules } = require("./rules")
 const { version } = require("../package.json")
 
@@ -15,8 +15,8 @@ const configRoot = path.resolve(__dirname, "../lib/configs/")
 const configs = fs.readdirSync(configRoot).map(filename => {
     const id = `plugin:es/${path.basename(filename, ".js")}`
     const configFile = path.join(configRoot, filename)
-    const engine = new CLIEngine({ configFile, useEslintrc: false })
-    const config = engine.getConfigForFile("a.js")
+    const engine = new ESLint({ configFile, useEslintrc: false })
+    const config = engine.calculateConfigForFile("a.js")
     const ruleIds = new Set(Object.keys(config.rules))
     return { id, ruleIds }
 })

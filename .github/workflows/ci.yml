@@ -15,9 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
       - name: Install Packages
         run: npm install
       - name: Lint
@@ -28,37 +28,43 @@ jobs:
 
     strategy:
       matrix:
-        eslint: [7]
-        node: [14]
+        eslint: [8]
+        node: [16]
         os: [ubuntu-latest]
         include:
           # On other platforms
-          - eslint: 7
-            node: 14
+          - eslint: 8
+            node: 16
             os: windows-latest
-          - eslint: 7
-            node: 14
+          - eslint: 8
+            node: 16
             os: macos-latest
           # On old Node.js versions
-          - eslint: 7
+          - eslint: 8
+            node: 14
+            os: ubuntu-latest
+          - eslint: 8
             node: 12
             os: ubuntu-latest
           - eslint: 7
             node: 10
             os: ubuntu-latest
           # On old ESLint versions
+          - eslint: 7
+            node: 16
+            os: ubuntu-latest
           - eslint: 6
-            node: 14
+            node: 16
             os: ubuntu-latest
           - eslint: 5
-            node: 14
+            node: 16
             os: ubuntu-latest
           - eslint: 4
-            node: 14
+            node: 16
             os: ubuntu-latest
           # On the minimum supported ESLint/Node.js version
-          - eslint: 4
-            node: "8.10"
+          - eslint: 4.19.1
+            node: 10
             os: ubuntu-latest
 
     runs-on: ${{ matrix.os }}
@@ -66,7 +72,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
       - name: Install Packages
