@@ -22,7 +22,7 @@ const a3 = bar+`foo`
 const a1 = &quot;foo&quot;
 const a2 = &quot;foo&quot;+bar+&quot;baz&quot;
 const a3 = bar+&quot;foo&quot;
-const a4 = bar+&apos;foo&apos;
+const a4 = bar+'foo'
 " />
 
 ## 📚 References
